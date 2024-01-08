@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the custom_salary module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function personsalary_schema() {
+  $schema['person_salary'] = [
+    'description' => 'Table for person salaries.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'The primary key of the person_salary table.',
+      ],
+      'name' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'description' => 'Name of the person ',
+            ),
+      'Month' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'The month for the salary entry.',
+      ],
+      'Year' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'The year for the salary entry.',
+      ],
+      'Salary' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'The salary amount.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

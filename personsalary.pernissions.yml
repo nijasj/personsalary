@@ -1,0 +1,7 @@
+add personsalary entry:
+  title: 'Add person salary Entry'
+  description: 'Allows users to add person salary entries.'
+
+edit personsalary entry:
+  title: 'Edit person salary Entry'
+  description: 'Allows users to edit person salary entries.'

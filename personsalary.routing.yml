@@ -1,0 +1,36 @@
+address_book.add_form:
+  path: '/personsalary/add'
+  defaults:
+    _form: '\Drupal\personsalary\Form\PersonSalaryAddForm'
+    _title: 'Add personsalary'
+  requirements:
+    _permission: 'add personsalary entry'
+address_book.edit_form:
+  path: '/personsalary/{id}/edit'
+  defaults:
+      _form: '\Drupal\personsalary\Form\PersonSalaryEditForm'
+      _title: 'Edit personsalary'
+  requirements:
+      _permission: 'edit personsalary entry'
+address_book.search_form:
+  path: '/personsalary/search'
+  defaults:
+    _form: '\Drupal\personsalary\Form\PersonSalarySearchForm'
+    _title: 'Search personsalary'
+  requirements:
+    _permission: 'access content'
+address_book.search_controller:
+  path: '/personsalary/search-results/{search}'
+  defaults:
+    _controller: '\Drupal\personsalary\Controller\PersonSalarySearchController::searchResults'
+    _title: 'Search Results'
+  requirements:
+    _permission: 'access content'
+
+    personsalary.salary_list:
+  path: '/salary-list'
+  defaults:
+    _controller: '\Drupal\personsalary\Controller\SalaryListController::salaryList'
+    _title: 'Salary List'
+  requirements:
+    _permission: 'access content'

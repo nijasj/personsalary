@@ -1,0 +1,6 @@
+personsalary.add_details:
+  title: Add person salary details
+  description: Add details to the person salary
+  route_name: personsalary.add_form
+  weight: 10
+  menu_name: main

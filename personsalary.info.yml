@@ -1,0 +1,6 @@
+name: 'Person Salary'
+type: module
+description: 'Creates a new database table for person salaries.'
+core_version_requirement: ^9 || ^10
+package: Custom
+version: 1.0
