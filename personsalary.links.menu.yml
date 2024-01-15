@@ -1,0 +1,12 @@
+personsalary.add_salary:
+  title: Add salary
+  description: Add salary
+  route_name: personsalary.add_form
+  weight: 10
+  menu_name: main
+personsalary.search_salary:
+  title: Search
+  description: Search salary 
+  route_name: personsalary.search_form
+  weight: 10
+  menu_name: main

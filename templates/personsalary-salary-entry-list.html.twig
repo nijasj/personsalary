@@ -1,0 +1,22 @@
+{#
+  Template for displaying the salary entry list.
+#}
+
+<table>
+  <thead>
+    <tr>
+      {% for key, label in header %}
+        <th>{{ label }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        {% for key, value in row %}
+          <td>{{ value }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

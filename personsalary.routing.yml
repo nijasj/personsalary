@@ -1,0 +1,45 @@
+personsalary.add_form:
+  path: '/personsalary/add'
+  defaults:
+    _form: '\Drupal\personsalary\Form\PersonSalaryAddForm'
+    _title: 'Add salary'
+  requirements:
+    _permission: 'add salary entry'
+personsalary.edit_form:
+  path: '/personsalary/{id}/edit'
+  defaults:
+      _form: '\Drupal\personsalary\Form\PersonSalaryEditForm'
+      _title: 'Edit salary'
+  requirements:
+      _permission: 'edit salary entry'
+personsalary.search_form:
+  path: '/personsalary/search'
+  defaults:
+    _form: '\Drupal\personsalary\Form\PersonSalarySearchForm'
+    _title: 'Search salary'
+  requirements:
+    _permission: 'access content'
+personsalary.search_controller:
+  path: '/personsalary/search-results/{search}'
+  defaults:
+    _controller: '\Drupal\personsalary\Controller\PersonSalarySearchController::searchResults'
+    _title: 'Search Results'
+  requirements:
+    _permission: 'access content'
+personsalary.delete_form:
+  path: '/personsalary/{id}/delete'
+  defaults:
+      _form: '\Drupal\personsalary\Form\PersonSalaryDeleteForm'
+      _title: 'Delete salary'
+  requirements:
+      _permission: 'delete salary entry'
+
+
+
+personsalary.salary_list:
+  path: '/person-salary-list'
+  defaults:
+    _controller: '\Drupal\personsalary\Controller\SalarylistController::content'
+    _title: 'Salary List'
+  requirements:
+    _permission: 'access content'

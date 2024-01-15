@@ -1,0 +1,12 @@
+add salary entry:
+  title: 'Add salary Entry'
+  description: 'Allows users to add salary entries.'
+
+edit salary entry:
+  title: 'Edit salary Entry'
+  description: 'Allows users to edit salary entries.'
+
+
+delete salary entry:
+  title: 'Delete salary Entry'
+  description: 'Allows users to delete salary entries.'

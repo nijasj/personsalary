@@ -1,0 +1,5 @@
+name: 'person salary'
+type: module
+description: 'Custom module for person salary'
+package: ' Custom'
+core_version_requirement: ^9|| ^10
